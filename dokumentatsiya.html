@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Bot uchun Hujjat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #0078D7;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .step {
+            margin-bottom: 20px;
+        }
+
+        .step h2 {
+            color: #0078D7;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 5px 10px;
+            display: block;
+            border-left: 5px solid #0078D7;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #0078D7;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #f4f4f9;
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background-color: #ffefc1;
+            padding: 3px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Telegram Bot uchun Hujjat</h1>
+        <p>Botni sozlash va ishga tushirish bo'yicha bosqichma-bosqich qo'llanma.</p>
+    </header>
+
+    <div class="container">
+        <div class="step">
+            <h2>1-qadam: Zaruriy kutubxonalarni o'rnatish</h2>
+            <p>Node.js kompyuteringizga o'rnatilganiga ishonch hosil qiling. So'ngra, quyidagi buyruqni bajarib, kerakli kutubxonalarni o'rnating:</p>
+            <code>
+npm install telegram fs path
+            </code>
+        </div>
+
+        <div class="step">
+            <h2>2-qadam: API ID va API Hash olish</h2>
+            <p>
+                Telegram API ID va API Hashni olish uchun quyidagi bosqichlarni bajarish kerak:
+            </p>
+            <ul>
+                <li>Telegramning <a href="https://my.telegram.org/apps" target="_blank">rəsmi sayti</a>ga kiring.</li>
+                <li>Hisobingiz bilan tizimga kiring.</li>
+                <li>"API Development Tools" bo'limiga o'ting.</li>
+                <li>Yangi ilova yaratish uchun <strong>Create new application</strong> tugmasini bosing.</li>
+                <li>Ilovangiz nomini va qisqacha tavsifini kiriting, so'ngra <strong>Create application</strong> tugmasini bosing.</li>
+                <li>Ilova yaratildi va sizga API ID va API Hash beriladi. Ushbu ma'lumotlarni o'zingizning <code>index.js</code> faylingizda <span class="highlight">apiId</span> va <span class="highlight">apiHash</span> sifatida qo'llang.</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h2>3-qadam: Skriptni sozlash</h2>
+            <p><span class="highlight">index.js</span> faylini oching va quyidagi qatorlarga o'zingizning ma'lumotlaringizni kiriting:</p>
+            <code>
+const apiId = YOUR_API_ID; // O'zingizning API ID<br>
+const apiHash = "YOUR_API_HASH"; // O'zingizning API Hash<br>
+const channelOrGroupID = "-1001234567890"; // Guruh yoki kanal ID
+            </code>
+        </div>
+
+        <div class="step">
+            <h2>4-qadam: Skriptni ishga tushirish</h2>
+            <p>Quyidagi buyruq orqali botni ishga tushiring:</p>
+            <code>
+node index.js
+            </code>
+        </div>
+
+        <div class="step">
+            <h2>5-qadam: Jarayonni kuzatish</h2>
+            <p>Bot ishga tushirilgandan so'ng, konsolda foydalanuvchilar chiqarilayotgani va ularning ma'lumotlari <span class="highlight">User.json</span> fayliga yozilayotgani haqidagi ma'lumotlarni ko'rishingiz mumkin.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Savollar bormi? <a href="https://core.telegram.org/bots" target="_blank">Telegram Bot Hujjatlarini</a> ko'rib chiqing.</p>
+    </footer>
+</body>
+</html>

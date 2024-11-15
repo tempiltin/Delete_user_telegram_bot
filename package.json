@@ -1,0 +1,19 @@
+{
+  "name": "tempiltin",
+  "version": "1.0.0",
+  "description": "delete user tempiltin bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tempiltin/Delete_user_telegram_bot.git"
+  },
+  "author": "Tempiltin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tempiltin/Delete_user_telegram_bot/issues"
+  },
+  "homepage": "https://github.com/tempiltin/Delete_user_telegram_bot#readme"
+}
